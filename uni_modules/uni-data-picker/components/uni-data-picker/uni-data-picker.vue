@@ -507,6 +507,7 @@
 	/* #endif */
 	
 	/* picker 弹出层通用的指示小三角, todo：扩展至上下左右方向定位 */
+	/* #ifdef H5 */
 	.uni-popper__arrow,
 	.uni-popper__arrow::after {
 		position: absolute;
@@ -534,4 +535,5 @@
 		border-top-width: 0;
 		border-bottom-color: #fff;
 	}
+	/* #endif */
 	</style>
