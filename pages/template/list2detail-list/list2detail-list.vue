@@ -18,11 +18,6 @@
 						</view>
 					</view>
 				</view>
-				<!-- #ifdef APP-PLUS -->
-				<view class="ad-view" v-if="(index > 0 && (index+1) % 10 == 0)">
-					<ad :adpid="adpid" @error="aderror"></ad>
-				</view>
-				<!-- #endif -->
 			</block>
 		</view>
 		<uni-load-more :status="status" :icon-size="16" :content-text="contentText" />
@@ -40,7 +35,6 @@
 				last_id: '',
 				reload: false,
 				status: 'more',
-				adpid: '',
 				contentText: {
 					contentdown: '上拉加载更多',
 					contentrefresh: '加载中',
@@ -49,7 +43,6 @@
 			};
 		},
 		onLoad() {
-			this.adpid = this.$adpid;
 			this.getBanner();
 			this.getList();
 		},
