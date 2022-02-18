@@ -1,3 +1,7 @@
 unpackage/
 dist/
 node_modules/
+.project
+.DS_Store
+wxcomponents/
+.hbuilderx/
